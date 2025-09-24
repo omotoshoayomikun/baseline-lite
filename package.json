@@ -1,0 +1,29 @@
+{
+  "name": "baseline-web-features-linter",
+  "displayName": "Baseline Web Features Linter",
+  "description": "Highlights CSS features not widely supported (Baseline low or limited) with inline warnings and MDN documentation links.",
+  "version": "0.0.2",
+  "publisher": "your-name-or-org",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:css"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {},
+  "scripts": {
+    "compile": "tsc -p ."
+  },
+  "dependencies": {
+    "web-features": "^3.0.0",
+    "@mdn/browser-compat-data": "^7.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/vscode": "^1.80.0"
+  }
+}
