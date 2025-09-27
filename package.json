@@ -1,8 +1,8 @@
 {
   "name": "baseline-web-features-linter",
   "displayName": "Baseline Web Features Linter",
-  "description": "Highlights CSS features not widely supported (Baseline low or limited) with inline warnings and MDN documentation links.",
-  "version": "0.0.2",
+  "description": "Highlights CSS, HTML, and JS/TS features not fully supported according to Web Platform Baseline.",
+  "version": "0.0.3",
   "publisher": "your-name-or-org",
   "engines": {
     "vscode": "^1.80.0"
@@ -11,19 +11,45 @@
     "Linters"
   ],
   "activationEvents": [
-    "onLanguage:css"
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:sass",
+    "onLanguage:less",
+    "onLanguage:postcss",
+    "onLanguage:html",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact"
   ],
   "main": "./out/extension.js",
-  "contributes": {},
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "baselineLinter.presentation": {
+          "type": "string",
+          "enum": [
+            "diagnostic",
+            "decorations",
+            "both"
+          ],
+          "default": "diagnostic",
+          "description": "How Baseline findings are shown: VS Code diagnostics (Problems), inline decorations, or both."
+        }
+      }
+    }
+  },
   "scripts": {
     "compile": "tsc -p ."
   },
   "dependencies": {
-    "web-features": "^3.0.0",
-    "@mdn/browser-compat-data": "^7.1.0"
+    "@mdn/browser-compat-data": "^7.1.0",
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.2",
+    "web-features": "^3.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/vscode": "^1.80.0"
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
   }
 }
