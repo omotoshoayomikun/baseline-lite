@@ -1,4 +1,4 @@
-# Baseline Web Features Linter (VS Code Extension)
+# Baseline Lite (VS Code Extension)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -71,7 +71,8 @@ Baseline | loading="lazy": Newly available        (MDN)
 ## ⚙️ Installation
 
 **1. Clone this repository:**
-https://github.com/omotoshoayomikun/fast-light-vs-code-extention-.git
+git clone https://github.com/omotoshoayomikun/baseline-lite.git
+cd baseline-lite
 
 **2. Install Dependencies:**
 npm install
