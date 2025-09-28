@@ -3,8 +3,12 @@
   "displayName": "Baseline Lite",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/omotoshoayomikun/baseline-lite.git"
   },
+  "bugs": {
+    "url": "https://github.com/omotoshoayomikun/baseline-lite/issues"
+  },
+  "homepage": "https://github.com/omotoshoayomikun/baseline-lite#readme",
   "description": "Highlights CSS, HTML, and JS/TS features not fully supported according to Web Platform Baseline.",
   "version": "0.0.3",
   "publisher": "BaselineLite",
