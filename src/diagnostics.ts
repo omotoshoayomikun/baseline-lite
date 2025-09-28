@@ -39,7 +39,7 @@ for (const f of findings) {
 
   if (sev !== null) {
     const d = new vscode.Diagnostic(f.range, msg, sev);
-    d.source = 'Baseline';                            // ← Problems panel shows “Baseline”
+    d.source = 'Baseline Lite';                            // ← Problems panel shows “Baseline”
     // if we have an MDN URL for the key, attach it:
     const info = baselineIndex.get(f.key);
     if (info?.mdnUrl) {

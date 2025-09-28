@@ -71,8 +71,7 @@ Baseline | loading="lazy": Newly available        (MDN)
 ## ⚙️ Installation
 
 **1. Clone this repository:**
-git clone https://github.com/your-org/baseline-web-features-linter.git
-cd baseline-web-features-linter
+https://github.com/omotoshoayomikun/fast-light-vs-code-extention-.git
 
 **2. Install Dependencies:**
 npm install

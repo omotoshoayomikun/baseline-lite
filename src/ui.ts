@@ -44,7 +44,7 @@ function ensureDecorationTypes() {
   }
   if (!statusItem) {
     statusItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left, 100);
-    statusItem.tooltip = 'Web Platform Baseline summary';
+    statusItem.tooltip = 'Baseline Lite summary';
     statusItem.show();
   }
 }
@@ -103,6 +103,6 @@ export function renderDecorations(editor: vscode.TextEditor, findings: Finding[]
     const parts: string[] = [];
     if (countLimited) parts.push(`${countLimited} limited`);
     if (countLow) parts.push(`${countLow} newly`);
-    statusItem.text = parts.length ? `Baseline: ${parts.join(', ')}` : 'Baseline: OK';
+    statusItem.text = parts.length ? `Baseline Lite: ${parts.join(', ')}` : 'Baseline: OK';
   }
 }

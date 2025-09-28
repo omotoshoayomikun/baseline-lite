@@ -1,9 +1,9 @@
 {
-  "name": "baseline-web-features-linter",
-  "displayName": "Baseline Web Features Linter",
+  "name": "baseline-lite",
+  "displayName": "Baseline Lite",
   "description": "Highlights CSS, HTML, and JS/TS features not fully supported according to Web Platform Baseline.",
   "version": "0.0.3",
-  "publisher": "your-name-or-org",
+  "publisher": "omotosho ayomikun",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -25,8 +25,9 @@
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
+      "title": "Baseline Lite",
       "properties": {
-        "baselineLinter.presentation": {
+        "baselineLite.presentation": {
           "type": "string",
           "enum": [
             "diagnostic",
