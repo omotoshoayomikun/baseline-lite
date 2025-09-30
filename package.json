@@ -11,7 +11,7 @@
   },
   "homepage": "https://github.com/omotoshoayomikun/baseline-lite#readme",
   "description": "Highlights CSS, HTML, and JS/TS features not fully supported according to Web Platform Baseline.",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "publisher": "BaselineLite",
   "engines": {
     "vscode": "^1.80.0"
@@ -43,7 +43,7 @@
             "decorations",
             "both"
           ],
-          "default": "diagnostic",
+          "default": "both",
           "description": "How Baseline findings are shown: VS Code diagnostics (Problems), inline decorations, or both."
         }
       }
@@ -53,7 +53,6 @@
     "compile": "tsc -p ."
   },
   "dependencies": {
-    "@mdn/browser-compat-data": "^7.1.0",
     "acorn": "^8.15.0",
     "acorn-walk": "^8.3.2",
     "web-features": "^3.0.0"

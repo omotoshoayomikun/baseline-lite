@@ -1,2 +1,10 @@
-node_modules
-out/test
+# keep production deps. do NOT exclude node_modules entirely
+out/test/**
+src/**
+.vscode/**
+.git/**
+**/*.map
+**/*.ts
+# (optional) exclude type packages to reduce size
+node_modules/**/@types/**
+node_modules/typescript/**
